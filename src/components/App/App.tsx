@@ -1,5 +1,8 @@
 import React, { Fragment } from 'react';
 import { ReactComponent as Logo } from '../../images/bg-header-desktop.svg';
+import JobComponent from '../Job/Job';
+import { data } from '../../data';
+
 import './App.scss';
 
 function App() {
@@ -8,7 +11,12 @@ function App() {
       <header>
         <Logo />
       </header>
-      <main>Hello World</main>
+      <main>
+        Hello World
+        {data.map((job, index) => {
+          return <JobComponent key={index} data={job} />;
+        })}
+      </main>
     </Fragment>
   );
 }
