@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from '../Image/Image';
+import Data from '../Data/Data';
+import LocationTime from '../LocationTime/LocationTime';
 
 interface PropsData {
   data: {
@@ -24,6 +26,17 @@ const JobComponent = ({ data }: PropsData) => {
     <div>
       job component
       <Image svgSrc={data.logo} />
+      <Data
+        role={data.role}
+        languages={data.languages}
+        level={data.level}
+        tools={data.tools}
+      />
+      <LocationTime
+        location={data.location}
+        postedAt={data.postedAt}
+        contract={data.contract}
+      />
     </div>
   );
 };
