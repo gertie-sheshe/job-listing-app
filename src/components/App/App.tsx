@@ -1,8 +1,16 @@
-import React from 'react';
-import './App.css';
+import React, { Fragment } from 'react';
+import { ReactComponent as Logo } from '../../images/bg-header-desktop.svg';
+import './App.scss';
 
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <Fragment>
+      <header>
+        <Logo />
+      </header>
+      <main>Hello World</main>
+    </Fragment>
+  );
 }
 
 export default App;
