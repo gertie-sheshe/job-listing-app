@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 interface PropsData {
   postedAt: string;
@@ -8,11 +8,11 @@ interface PropsData {
 
 const LocationTime = ({ postedAt, contract, location }: PropsData) => {
   return (
-    <Fragment>
-      <p>{postedAt}</p>
-      <p>{contract}</p>
-      <p>{location}</p>
-    </Fragment>
+    <div>
+      <span>{postedAt}</span>
+      <span>{contract}</span>
+      <span>{location}</span>
+    </div>
   );
 };
 

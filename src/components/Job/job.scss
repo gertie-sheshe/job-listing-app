@@ -1,0 +1,22 @@
+.card {
+  background-color: white;
+  width: 80vw;
+  height: 150px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+
+  .image-and-title {
+    flex: 1;
+    display: flex;
+  }
+
+  .tools-and-lang {
+    flex: 1;
+    display: flex;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

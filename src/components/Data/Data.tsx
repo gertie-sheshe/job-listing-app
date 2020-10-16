@@ -1,26 +1,20 @@
-import React from 'react';
-import Tool from '../Tool/Tool';
+import React, { Fragment } from 'react';
 
 interface PropsData {
   role: string;
   level: string;
   languages: string[];
-  tools: string[];
 }
 
-const Data = ({ role, level, languages, tools }: PropsData) => {
+const Data = ({ role, level, languages }: PropsData) => {
   return (
-    <div>
-      Data
+    <Fragment>
       <p>{role}</p>
       <p>{level}</p>
       {languages.map((language, index) => (
         <p key={index}>{language}</p>
       ))}
-      {tools.length
-        ? tools.map((tool, index) => <Tool key={index} tool={tool} />)
-        : null}
-    </div>
+    </Fragment>
   );
 };
 

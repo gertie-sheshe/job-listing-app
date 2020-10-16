@@ -1,4 +1,5 @@
 import React from 'react';
+import './image.scss';
 
 interface PropsData {
   svgSrc: typeof import('*.svg');
@@ -6,8 +7,7 @@ interface PropsData {
 
 const CompanyImage = ({ svgSrc }: PropsData) => {
   return (
-    <div>
-      Image
+    <div className="image-container">
       <img alt="company logo" src={`${svgSrc}`} />
     </div>
   );

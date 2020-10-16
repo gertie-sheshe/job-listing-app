@@ -3,4 +3,8 @@ main {
   height: 100vh;
   background-color: hsl(180, 52%, 96%);
   overflow: scroll;
+
+  .content {
+    margin: 50px 10vw 0 10vw;
+  }
 }

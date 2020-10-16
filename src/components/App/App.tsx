@@ -12,10 +12,11 @@ function App() {
         <Logo />
       </header>
       <main>
-        Hello World
-        {data.map((job, index) => {
-          return <JobComponent key={index} data={job} />;
-        })}
+        <div className="content">
+          {data.map((job, index) => {
+            return <JobComponent key={index} data={job} />;
+          })}
+        </div>
       </main>
     </Fragment>
   );
