@@ -28,8 +28,13 @@ const JobComponent = ({ data }: PropsData) => {
     <div className="card">
       <div className="image-and-title">
         <Image svgSrc={data.logo} />
-        <div>
-          <div>{data.company}</div>
+        <div className="title-and-location">
+          <div className="company">
+            <p>{data.company}</p>
+          </div>
+          <div className="position">
+            <p>{data.position}</p>
+          </div>
           <LocationTime
             location={data.location}
             postedAt={data.postedAt}

@@ -9,10 +9,16 @@ interface PropsData {
 const Data = ({ role, level, languages }: PropsData) => {
   return (
     <Fragment>
-      <p>{role}</p>
-      <p>{level}</p>
+      <div>
+        <p>{role}</p>
+      </div>
+      <div>
+        <p>{level}</p>
+      </div>
       {languages.map((language, index) => (
-        <p key={index}>{language}</p>
+        <div>
+          <p key={index}>{language}</p>
+        </div>
       ))}
     </Fragment>
   );

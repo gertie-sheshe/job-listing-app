@@ -7,16 +7,55 @@
   display: flex;
 
   .image-and-title {
-    flex: 1;
+    flex: 2;
     display: flex;
+
+    .title-and-location {
+      padding-top: 17px;
+
+      .company {
+        p {
+          font-weight: 700;
+        }
+      }
+
+      .position {
+        p {
+          color: black;
+          font-weight: 700;
+        }
+      }
+    }
   }
 
   .tools-and-lang {
     flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+
+    div {
+      margin-right: 10px;
+      background-color: hsl(180, 52%, 96%);
+      width: 80px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 415px) {
     display: block;
+
+    .image-and-title {
+      display: block;
+    }
   }
 }

@@ -5,7 +5,11 @@ interface PropsData {
 }
 
 const Tool = ({ tool }: PropsData) => {
-  return <div>{tool}</div>;
+  return (
+    <div>
+      <p>{tool}</p>
+    </div>
+  );
 };
 
 export default Tool;

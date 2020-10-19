@@ -1,4 +1,5 @@
 import React from 'react';
+import './LocationTime.scss';
 
 interface PropsData {
   postedAt: string;
@@ -8,7 +9,7 @@ interface PropsData {
 
 const LocationTime = ({ postedAt, contract, location }: PropsData) => {
   return (
-    <div>
+    <div className="location-time">
       <span>{postedAt}</span>
       <span>{contract}</span>
       <span>{location}</span>

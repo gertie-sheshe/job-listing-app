@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  color: hsl(180, 29%, 50%);
+}
 main {
   width: 100vw;
   height: 100vh;
