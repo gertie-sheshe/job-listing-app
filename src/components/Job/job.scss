@@ -1,13 +1,14 @@
 .card {
   background-color: white;
   width: 80vw;
-  height: 150px;
+  height: auto;
   margin-bottom: 30px;
   border-radius: 10px;
+  padding-bottom: 20px;
   display: flex;
 
   .image-and-title {
-    flex: 2;
+    flex: 3;
     display: flex;
 
     .title-and-location {
@@ -37,6 +38,7 @@
 
     div {
       margin-right: 10px;
+      margin-top: 20px;
       background-color: hsl(180, 52%, 96%);
       width: 80px;
       height: 30px;
@@ -45,17 +47,36 @@
       justify-content: center;
 
       p {
-        font-size: 12px;
+        font-size: 0.7rem;
         font-weight: 700;
       }
     }
   }
 
-  @media (max-width: 415px) {
+  @media (min-width: 700px) and (max-width: 1300px) {
+    flex-direction: column;
+
+    .tools-and-lang {
+      justify-content: flex-start;
+      padding-left: 148px;
+    }
+  }
+
+  @media (max-width: 699px) {
     display: block;
+
+    .tools-and-lang {
+      flex-wrap: wrap;
+      justify-content: left;
+      padding-left: 30px;
+    }
 
     .image-and-title {
       display: block;
+
+      .title-and-location {
+        padding-left: 30px;
+      }
     }
   }
 }

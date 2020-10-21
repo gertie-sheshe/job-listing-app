@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --size: 0.85rem;
+}
+
 body {
   font-family: 'Spartan', sans-serif;
-  font-size: 15px;
+  font-size: var(--size);
   color: hsl(180, 29%, 50%);
 }
 main {
