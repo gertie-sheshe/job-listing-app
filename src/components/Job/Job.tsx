@@ -30,7 +30,7 @@ const JobComponent = ({ data }: PropsData) => {
         <Image svgSrc={data.logo} />
         <div className="title-and-location">
           <div className="company">
-            <p>{data.company}</p>
+            <a href={`${data.company}.com`}>{data.company}</a>
           </div>
           <div className="position">
             <p>{data.position}</p>

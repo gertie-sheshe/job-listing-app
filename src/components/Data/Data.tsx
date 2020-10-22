@@ -16,8 +16,8 @@ const Data = ({ role, level, languages }: PropsData) => {
         <p>{level}</p>
       </div>
       {languages.map((language, index) => (
-        <div>
-          <p key={index}>{language}</p>
+        <div key={index}>
+          <p>{language}</p>
         </div>
       ))}
     </Fragment>

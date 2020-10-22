@@ -6,6 +6,7 @@
   border-radius: 10px;
   padding-bottom: 20px;
   display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   .image-and-title {
     flex: 3;
@@ -15,8 +16,18 @@
       padding-top: 17px;
 
       .company {
-        p {
+        a {
           font-weight: 700;
+          color: var(--primary-font-color);
+          // margin-top: 0;
+        }
+        a:link {
+          text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+          text-decoration: underline;
         }
       }
 
@@ -76,6 +87,7 @@
 
       .title-and-location {
         padding-left: 30px;
+        padding-top: 0px;
       }
     }
   }
