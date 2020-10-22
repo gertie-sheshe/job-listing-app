@@ -4,9 +4,13 @@ import './index.css';
 import App from './components/App/App';
 import * as serviceWorker from './serviceWorker';
 
+import { JobsContextProvider } from './context/jobs-context';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <JobsContextProvider>
+      <App />
+    </JobsContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
